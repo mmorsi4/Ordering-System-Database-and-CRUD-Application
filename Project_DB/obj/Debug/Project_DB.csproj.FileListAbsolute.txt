@@ -12,3 +12,4 @@ D:\asu\Spring 25\Database\project phase 2\Ordering-System-Database-and-CRUD-Appl
 D:\asu\Spring 25\Database\project phase 2\Ordering-System-Database-and-CRUD-Application-master\Ordering-System-Database-and-CRUD-Application-master\Project_DB\obj\Debug\Project_DB.UpdateData.resources
 D:\asu\Spring 25\Database\project phase 2\Ordering-System-Database-and-CRUD-Application-master\Ordering-System-Database-and-CRUD-Application-master\Project_DB\obj\Debug\Project_DB.InsertData.resources
 D:\asu\Spring 25\Database\project phase 2\Ordering-System-Database-and-CRUD-Application-master\Ordering-System-Database-and-CRUD-Application-master\Project_DB\obj\Debug\Project_DB.DeleteData.resources
+D:\asu\Spring 25\Database\project phase 2\Ordering-System-Database-and-CRUD-Application-master\Ordering-System-Database-and-CRUD-Application-master\Project_DB\obj\Debug\Project_DB.Login.resources

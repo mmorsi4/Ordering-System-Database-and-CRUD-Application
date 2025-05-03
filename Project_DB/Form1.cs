@@ -25,7 +25,7 @@ namespace Project_DB
         public Form1()
         {
             InitializeComponent();
-            con = new SqlConnection("Data Source=KND;Initial Catalog=Ordering System;Integrated Security=True");
+            con = new SqlConnection(Program.AuthConnectionString);
             dataGridView.SelectionChanged += dataGridView_SelectionChanged;
 
             comboBox.Text = "Select Table";
@@ -66,7 +66,8 @@ namespace Project_DB
             updateDataButton.Click += UpdateDataButton_Click;
             deleteDataButton.Click += DeleteDataButton_Click;
             operationsButton.Click += OperationsButton_Click;
-            logOutButton.Click += LogOutButton_Click;
+            logOutButton.Click += logOutButton_Click_1;
+            ExitButton.Click += button1_Click;
 
         }
 
@@ -582,16 +583,13 @@ namespace Project_DB
 
         private void OperationsButton_Click(object sender, EventArgs e)
         {
-           
+
+            ShowUserControl(new CustomerOrders());
+
+
             HighlightActiveButton(operationsButton);
-            HideAllContentControls();
-            MessageBox.Show("Extra operations functionality will go here");
         }
 
-        private void LogOutButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit(); // Or implement proper logout logic
-        }
 
         private void HighlightActiveButton(System.Windows.Forms.Button activeButton)
         {
@@ -647,6 +645,18 @@ namespace Project_DB
         private void mainPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void logOutButton_Click_1(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

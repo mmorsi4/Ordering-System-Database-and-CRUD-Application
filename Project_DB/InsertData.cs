@@ -14,8 +14,7 @@ namespace Project_DB
         {
             InitializeComponent();
 
-            con = new SqlConnection("Data Source=KND;Initial Catalog=Ordering System;Integrated Security=True");
-
+            con=new SqlConnection(Program.AuthConnectionString);
             comboBox.Items.AddRange(new string[]
             {
                 "Cart", "Cart_MenuItem", "Customer", "Employee", "Menu_Item",
